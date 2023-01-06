@@ -1,8 +1,8 @@
 import { Test } from '@nestjs/testing';
 import { NotFoundException } from '@nestjs/common';
-import { TaskStatus } from './task-status.enum';
-import { TasksRepository } from './tasks.repository';
-import { TasksService } from './tasks.service';
+import { TaskStatus } from '../task-status.enum';
+import { TasksRepository } from '../tasks.repository';
+import { TasksService } from '../tasks.service';
 
 const mockTasksRepository = () => ({
   getTasks: jest.fn(),
@@ -10,7 +10,7 @@ const mockTasksRepository = () => ({
 });
 
 const mockUser = {
-  username: 'Ariel',
+  username: 'Kiran',
   id: 'someId',
   password: 'somePassword',
   tasks: [],
